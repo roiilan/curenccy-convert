@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currency calculetor</title>
+</head>
+
+<body>
+<h1>Currency:</h1>
+<nav>
+    <input type="number" class="amount-calc" placeholder="1" value=1>
+    <select onchange="onSetFromCurrency(this.value)">
+        <option value="USD">USD</option> 
+        <option value="ILS">ILS</option>
+    </select>
+    <Span>To</Span>
+    <select onchange="onSetToCurrency(this.value)">
+        <option value="ILS">ILS</option>
+        <option value="USD">USD</option> 
+    </select>
+    <button onclick="onConvert()">Convert</button>
+    <!-- <input placeholder="" class="convert-res" />     -->
+</nav>
+<h3></h3>
+
+    <script src="lib/axios.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/service.js"></script>
+</body>
+
+</html>
